@@ -1,9 +1,13 @@
 import type { FormEvent } from 'react';
 import Button from '../../ui/Button';
 import Input from '../../ui/Input';
-import styles from './Login.module.scss';
+import styles from './Login.module.css';
+import { login } from '../../../services/auth.service';
+import { setLocalStorage } from '../../../utils/storage';
+import { useNavigate } from 'react-router';
 
 const Login = () => {
+  const navigate = useNavigate();
   const handleLogin = async (event: FormEvent) => {
     event.preventDefault();
     const form = event.target as HTMLFormElement;
@@ -11,7 +15,10 @@ const Login = () => {
       email: form.email.value,
       password: form.Password.value,
     };
-    const result = await Login(payload);
+    const result = await login(payload);
+    setLocalStorage('auth', result.token);
+    
+    return navigate('/orders');
   };
   return (
     <main className={styles.login}>
@@ -26,3 +33,5 @@ const Login = () => {
     </main>
   );
 };
+
+export default Login;
