@@ -15,6 +15,13 @@
   }
 }
 
+.filter {
+  display: flex;
+  gap: 16px;
+  margin: 16px;
+  flex-wrap: wrap;
+}
+
 .list {
   display: grid;
   grid-template-columns: repeat(3,1fr);
