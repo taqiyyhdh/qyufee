@@ -14,6 +14,7 @@ interface ICart {
   quantity: number;
   notes: string;
   menuItem?: IMenu;
+  name?: string;
 }
 
 interface IOrder {
