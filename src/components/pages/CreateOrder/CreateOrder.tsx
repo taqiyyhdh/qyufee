@@ -114,7 +114,7 @@ const CreateOrder = () => {
           <div className={styles.header}>
             <h2 className={styles.title}>Customer Information</h2>
             <Link to="/orders">
-              <Button color="secondary">Cancel</Button>
+              <Button>Cancel</Button>
             </Link>
           </div>
           <div className={styles.input}>

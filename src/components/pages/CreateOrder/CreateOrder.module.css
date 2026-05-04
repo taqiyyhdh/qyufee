@@ -58,8 +58,9 @@
   }
 }
 
-.form {
-  box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
+.form { 
+  background-color: #CBB799;
+  border: 1.3px solid #3D211A;
   height: fit-content;
   position: sticky;
   top: 20px;
@@ -89,9 +90,11 @@
     flex-direction: column;
     gap: 16px;
     padding: 16px;
-    background-color: #fff7f7f7;
+    background-color: #CBB799;
     border-radius: 16px;
+    color: #1c1c1c;
   }
+
 
   .cart {
     .item {
