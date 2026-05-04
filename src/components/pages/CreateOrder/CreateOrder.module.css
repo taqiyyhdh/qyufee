@@ -29,9 +29,11 @@
   margin-top: 20px;
 
   .item {
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
-  padding: 16px;
-  border-radius: 24px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    padding: 16px;
+    border-radius: 24px;
+    border: 1px solid #CBB799;
   }
 
   .image {
@@ -51,6 +53,7 @@
 
     .price {
       font-size: 24px;
+      color: #d78a32;
     }
   }
 }
