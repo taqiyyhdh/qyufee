@@ -65,16 +65,16 @@ const ListOrder = () => {
             {orders.map((order: IOrder, index: number) => (
               <tr key={order.id}>
                 <td>{index + 1}</td>
-                <td>{order.customer_name}</td>
+                <td className={styles.name}>{order.customer_name}</td>
                 <td>{order.table_number}</td>
-                <td>${order.total}</td>
+                <td  className={styles.price}>${order.total}</td>
                 <td>{order.status}</td>
                 <td className={styles.action}>
                   <Link to={`/orders/${order.id}`}>
-                    <Button>Detail</Button>
+                    <Button className={styles.btnDetail}>Detail</Button>
                   </Link>
                   {order.status === 'PROCESSING' && (
-                    <Button onClick={() => handleComplateOrder(order.id)}>COMPLETED</Button> 
+                    <Button className={styles.btnCompleted} onClick={() => handleComplateOrder(order.id)}>COMPLETED</Button> 
                   )}
                 </td>
               </tr>
