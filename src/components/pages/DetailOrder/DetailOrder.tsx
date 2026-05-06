@@ -29,7 +29,7 @@ const DetailOrder = () => {
         <div className={styles.info}>
           <div className={styles.item}>
             <p>Order ID:</p>
-            <h4>{order?.id}</h4>
+            <h4 className={styles.orderId}>{order?.id}</h4>
           </div>
           <div className={styles.item}>
             <p>Customer:</p>
@@ -45,11 +45,11 @@ const DetailOrder = () => {
           </div>
           <div className={styles.item}>
             <p>Total:</p>
-            <h4>{order?.total}</h4>
+            <h3 className={styles.total}>${order?.total}</h3>
           </div>
         </div>
         <div className={styles.cart}>
-            <h3>Order Items</h3>
+            <h2>Order Items</h2>
             <div className={styles.list}>
               {order?.cart?.map((item: ICart) => (
                 <div className={styles.item} key={item.menuId}>
