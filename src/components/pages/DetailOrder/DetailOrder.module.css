@@ -1,5 +1,8 @@
 .detail {
   padding: 16px;
+  background: linear-gradient(135deg, #f7e9d9 10%, #dbb291 100%);
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 
 .header {
@@ -18,21 +21,24 @@
 
 .info {
   padding: 24px;
-  background-color: #e1cbaa;
-  border: 1.3px solid #3D211A;
+  background-color: #3D211A;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 10px rgba(120, 61, 25, 0.05);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
   font-weight: 500;
+  font-size: 20px;
 }
 
 .info .item {
   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 0;
-    border-bottom: 1px solid #e0e0e0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .cart h2 {
@@ -47,8 +53,9 @@
 }
 
 .list .item {
-  background-color: #e1cbaa;
-  border: 1.3px solid #3D211A;
+  background-color: #f4e5cf;
+  border: 1px solid #CBB799;
+  box-shadow: 0 4px 10px rgba(120, 61, 25, 0.05);
   display: flex;
   align-items: center;
   padding: 12px;
@@ -81,11 +88,14 @@
   text-overflow: ellipsis;
   max-width: 60px;
   display: block;
-  color: #823535;
+  color: #f5d679;
   font-size: 16px;
 }
 
+.status {
+  font-size: 16px;
+}
 .total {
-  color: #c86e06;
-  font-size: 24px;
+  color: #ffd146;
+  font-size: 30px;
 }

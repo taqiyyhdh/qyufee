@@ -41,7 +41,7 @@ const DetailOrder = () => {
           </div>
           <div className={styles.item}>
             <p>Status:</p>
-            <h4>{order?.status}</h4>
+            <h4 className={styles.status}>{order?.status}</h4>
           </div>
           <div className={styles.item}>
             <p>Total:</p>
