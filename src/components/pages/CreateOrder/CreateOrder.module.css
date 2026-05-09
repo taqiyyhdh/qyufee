@@ -2,7 +2,7 @@
   display: flex;
   gap: 32px;
   flex-direction: column;
-  padding: 16px;
+  padding: 16px 25px;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -65,6 +65,7 @@
   position: sticky;
   top: 20px;
   padding: 24px;
+  margin-top: 25px;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
