@@ -75,6 +75,7 @@
   text-align: left;
   font-weight: 700;
   color: #4a3728;
+  text-transform: capitalize;
 }
 .action {
   display: flex;
