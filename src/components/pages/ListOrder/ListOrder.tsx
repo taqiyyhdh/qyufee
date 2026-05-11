@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Button from "../../ui/Button";
 import type { IOrder } from "../../../types/order";
 import { removeLocalStorage } from "../../../utils/storage";
-import { FolderPlus, LogOut } from "lucide-react";
+import { FolderPlus, LogOut, NotepadText } from "lucide-react";
 
 const ListOrder = () => {
   const [orders, setOrders] = useState([]);
@@ -37,7 +37,7 @@ const ListOrder = () => {
   return (
     <main className={styles.order}>
       <section className={styles.header}>
-        <h1 className={styles.title}>Order List</h1>
+        <h1 className={styles.title}>Order List<NotepadText size={25} strokeWidth={2.5} /></h1>
         <div className={styles.button}>
           <Link to="/create">
             <Button> <FolderPlus size={16} strokeWidth={2.5} /> Create Order</Button>

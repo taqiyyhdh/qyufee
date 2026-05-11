@@ -4,7 +4,7 @@ import type { ICart, IOrder } from "../../../types/order";
 import { getOrderById } from "../../../services/order.service";
 import styles from './DetailOrder.module.css';
 import Button from "../../ui/Button";
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft, ScrollText } from "lucide-react";
 
 const DetailOrder = () => {
   const { id } = useParams();
@@ -21,7 +21,7 @@ const DetailOrder = () => {
   return (
     <main className={styles.detail}>
       <section className={styles.header}>
-        <h1>Detail Order</h1>
+        <h1>Detail Order<ScrollText size={30} strokeWidth={2.5} /></h1>
         <Link to="/orders">
           <Button><ChevronLeft size={16} strokeWidth={2.5} />Back</Button>
         </Link>
