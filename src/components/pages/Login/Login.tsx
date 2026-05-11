@@ -5,6 +5,7 @@ import styles from './Login.module.css';
 import { login } from '../../../services/auth.service';
 import { setLocalStorage } from '../../../utils/storage';
 import { useNavigate } from 'react-router';
+import { LogIn } from 'lucide-react';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -27,7 +28,7 @@ const Login = () => {
         <form className={styles.form} onSubmit={handleLogin}>
           <Input label='email' name='email' id='email' type='email' placeholder='Insert Email' required />
           <Input label='Password' name='Password' id='Password' type='Password' placeholder='Insert Password' required />
-          <Button type="submit">Login</Button>
+          <Button type="submit"><LogIn size={16} strokeWidth={2.5} />Login</Button>
         </form>
       </div>
     </main>

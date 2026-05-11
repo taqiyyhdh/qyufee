@@ -8,6 +8,7 @@ import { filters, tables } from "./CreateOrder.constans";
 import Input from "../../ui/Input";
 import Select from "../../ui/Select/Select";
 import { createOrder } from "../../../services/order.service";
+import { CirclePlus, ShoppingCart, XCircle } from "lucide-react";
 
 const CreateOrder = () => {
   const [menus, setMenus] = useState([]);
@@ -102,6 +103,7 @@ const CreateOrder = () => {
                       handleAddToCart('increment', `${item.id}`, `${item.name}`)
                    }
                 >
+                  <ShoppingCart size={18} strokeWidth={2.5} />
                   Add To Cart
                 </Button>
               </div>
@@ -114,7 +116,7 @@ const CreateOrder = () => {
           <div className={styles.header}>
             <h2 className={styles.title}>Customer Information</h2>
             <Link to="/orders">
-              <Button>Cancel</Button>
+              <Button>Cancel<XCircle size={16} strokeWidth={2.5} style={{ flexShrink: 0 }} /></Button>
             </Link>
           </div>
           <div className={styles.input}>
@@ -164,7 +166,7 @@ const CreateOrder = () => {
                   </div>
                 </div>
               ))}
-              <Button type="submit">Order</Button>
+              <Button type="submit">Order<CirclePlus size={16} strokeWidth={2.5} /></Button>
             </div>
           ) : (
             <div className={styles.cart}>

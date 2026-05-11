@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Button from "../../ui/Button";
 import type { IOrder } from "../../../types/order";
 import { removeLocalStorage } from "../../../utils/storage";
+import { FolderPlus, LogOut } from "lucide-react";
 
 const ListOrder = () => {
   const [orders, setOrders] = useState([]);
@@ -39,9 +40,9 @@ const ListOrder = () => {
         <h1 className={styles.title}>Order List</h1>
         <div className={styles.button}>
           <Link to="/create">
-            <Button>Create Order</Button>
+            <Button> <FolderPlus size={16} strokeWidth={2.5} /> Create Order</Button>
           </Link>
-          <Button color="secondary" onClick={handleLogout}>Logout</Button>
+          <Button color="secondary" onClick={handleLogout}><LogOut size={16} strokeWidth={2.5} />Logout</Button>
         </div>
       </section>
       <section>

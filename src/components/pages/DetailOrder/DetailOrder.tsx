@@ -4,6 +4,7 @@ import type { ICart, IOrder } from "../../../types/order";
 import { getOrderById } from "../../../services/order.service";
 import styles from './DetailOrder.module.css';
 import Button from "../../ui/Button";
+import { ChevronLeft } from "lucide-react";
 
 const DetailOrder = () => {
   const { id } = useParams();
@@ -22,7 +23,7 @@ const DetailOrder = () => {
       <section className={styles.header}>
         <h1>Detail Order</h1>
         <Link to="/orders">
-          <Button>Back</Button>
+          <Button><ChevronLeft size={16} strokeWidth={2.5} />Back</Button>
         </Link>
       </section>
       <section className={styles.order}>
