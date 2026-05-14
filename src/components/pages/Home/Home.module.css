@@ -10,9 +10,9 @@
 
 .title {
   display: flex;
-    align-items: baseline;
-    justify-content: center;
-    font-size: 3rem;
+  align-items: baseline;
+  justify-content: center;
+  font-size: 3rem;
 }
 
 .brand {
@@ -44,4 +44,27 @@
   margin: 15px 0 20px 0;
   letter-spacing: 1px;
   opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem; 
+    line-height: 1.2;
+    padding: 0 10px;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+
+  .brand {
+    margin-left: 2px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 200px;
+  }
 }
