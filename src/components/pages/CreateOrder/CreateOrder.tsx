@@ -104,14 +104,14 @@ const CreateOrder = () => {
                    }
                 >
                   <ShoppingCart size={18} strokeWidth={2.5} />
-                  Add To Cart
+                  <span className={styles.btnCart}>Add To Cart</span>
                 </Button>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <form className={styles.form} onSubmit={handleOrder}>
+      <form className={styles.form} onSubmit={handleOrder} id="order-form">
         <div>
           <div className={styles.header}>
             <h2 className={styles.title}>Customer Information</h2>
