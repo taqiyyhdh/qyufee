@@ -8,7 +8,7 @@ import { filters, tables } from "./CreateOrder.constans";
 import Input from "../../ui/Input";
 import Select from "../../ui/Select/Select";
 import { createOrder } from "../../../services/order.service";
-import { CirclePlus, ShoppingCart, XCircle } from "lucide-react";
+import { ChevronsUp, CirclePlus, ShoppingCart, XCircle } from "lucide-react";
 
 const CreateOrder = () => {
   const [menus, setMenus] = useState([]);
@@ -67,9 +67,15 @@ const CreateOrder = () => {
   };
 
   return (
-    <main className={styles.create}>
+    <main id="main" className={styles.create}>
       <div className={styles.menu}>
-        <h1>Explore Our Best Menu</h1>
+        <h1>
+          Explore Our Best Menu
+          <a href="#order-form">
+            <Button className={styles.btnFormCart}><ShoppingCart size={30} strokeWidth={2} /></Button>
+          </a>
+        </h1>
+        
         <div className={styles.filter}>
           {filters.map((filter) =>(
             <Button type='button' color={
@@ -175,6 +181,9 @@ const CreateOrder = () => {
           )}
         </div>
       </form>
+      <a href="#main">
+        <Button className={styles.btnArrow}><ChevronsUp size={25} strokeWidth={2} /></Button>
+      </a>
     </main>
   );
 };

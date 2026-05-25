@@ -125,6 +125,14 @@
   }
 }
 
+.btnFormCart {
+display: none;
+}
+
+.btnArrow {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .filter {
     gap: 10px;
@@ -159,5 +167,31 @@
         display: none;
       }
     }
+  }
+
+  .form {
+    position: static;
+    margin-top: 8px;
+  }
+  
+  .btnFormCart {
+    display: flex;
+    padding: 6px 12px;
+    border-radius: 50%;
+    background-color: #3D211A;
+    border: 1px solid #3D211A;
+    color: #fff;
+  }
+
+  .btnArrow {
+    display: flex;
+    border-radius: 0.5rem;
+    padding: 6px 12px;
+    margin: auto;
+    align-items: center;
+    width: 20%;
+    background-color: #3D211A;
+    border: 1px solid #3D211A;
+    color: #fff;
   }
 }
