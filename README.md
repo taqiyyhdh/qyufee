@@ -4,6 +4,8 @@ Aplikasi web dashboard khusus untuk **Admin/Kasir** di Kafe Qyuféé
 
 🌐 **Live Demo:** https://qyufee.vercel.app/
 
+![Preview](https://github.com/user-attachments/assets/c02ae178-9649-4bb0-a88b-55a6b66ac254)
+
 ## 🛠️ Frontend Stack:
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
